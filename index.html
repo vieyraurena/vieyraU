@@ -7,7 +7,44 @@
   <link rel="stylesheet" href="public/css/styles.css">
 </head>
 <body>
-  <h1>Portfolio 2021</h1>
+  <header class="header">
+    <img src="img/logo.svg" alt="logo's VieyraU">
+    <button class="header__hamburger hidden"></button>
+
+    <nav class="header__nav">
+      <ul class="header__nav--items">
+        <li class="header__nav--home">
+          <a class="header__nav--links" href="aboutMe.html">Home</a>
+        </li>
+        <li>
+          <a class="header__nav--links" href="aboutMe.html">About me</a>
+        </li>
+        <li>
+          <a class="header__nav--links" href="webDesign.html">web design</a>
+        </li>
+        <li>
+          <a class="header__nav--links" href="webDeveloper.html">web developer</a>
+        </li>
+        <li>
+          <a class="header__nav--links" href="contact.html">contact</a>
+        </li>
+      </ul>
+      <span class="slide"></span>
+    </nav>
+  </header>
+
+  <!--MENU-->
+  <div class="drawer js-drawer">
+    <!--this class is for the wrapper(width:container) that drawer-->
+    <div class="drawer__wrapper">
+      <div class="drawer__container--products js-drawer__container--products drawer__line--button">
+        <ul class="js__drawer--items">
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
   <script src="js/script.js"></script>
 </body>
 </html

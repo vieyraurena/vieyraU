@@ -1,0 +1,50 @@
+/* variables */
+
+/*======== type ========= */
+$main-font: 'poppins';
+$secondary-font: 'montserrat';
+
+$titles: $main-font;
+$bottoms: $main-font;
+$links: $main-font;
+$paragraf: $secondary-font;
+
+/*========= size ========== */
+
+$size:1rem;
+$small-size: $size * 1.4;
+$main-size:$size * 1.6;
+$medium-size: $size * 1.8;
+$large-size: $size * 2;
+$maxim-size: $size * 2.4;
+$maxim-size-form: $size * 3.2;
+
+/* ============ color ============= */
+$main-color: #262627;
+$fourth-color: #E7928A;
+$third-color:#045a54;
+$tone-color: #FEA701;
+
+$paragraf-color: $main-color;
+$menu: $main-color;
+$click: $third-color;
+$border: $fourth-color;
+
+/*========== backgrounds =========== */
+$main:#f7f6f2;
+$gray: #f7f6f2;
+$third: #B3D8CB;
+$fourth: #EDCCC3;
+
+$main-background: $main;
+$secondary-background: $gray;
+$third-background: $third;
+$fourth-background: $fourth;
+
+
+/*========= letter-space ========== */
+$letter-space-small: 0.3rem;
+
+/*========= line-height ========= */
+$line-height-medium: 1.8rem;
+$line-height-large: 3.2rem;

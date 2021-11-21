@@ -1,1 +1,161 @@
-h1{color:blue}
+/* ======= Utilities ======= */
+/* variables */
+/*======== type ========= */
+/*========= size ========== */
+/* ============ color ============= */
+/*========== backgrounds =========== */
+/*========= letter-space ========== */
+/*========= line-height ========= */
+/* typography */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+html {
+  scroll-behavior: smooth;
+  font-size: 10px; }
+
+body {
+  background-color: #f7f6f2;
+  margin: 0; }
+
+.hidden {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  overflow: hidden;
+  margin: 1.6rem;
+  padding: 1.6rem;
+  text-indent: 100%;
+  white-space: nowrap; }
+
+/* Titles */
+h1, h2, h3, h4 {
+  font-family: "poppins";
+  text-transform: capitalize; }
+
+h1 {
+  font-size: 2.4rem; }
+
+h2 {
+  font-size: 2rem;
+  padding-top: 5rem; }
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  padding-left: 3rem; }
+
+h4 {
+  font-size: 1.8rem; }
+
+p {
+  font-family: "montserrat";
+  font-size: 1.6rem;
+  line-height: 1.8rem; }
+
+a {
+  color: #262627;
+  font-family: "poppins";
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: capitalize; }
+  a:hover {
+    color: #045a54; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+button {
+  outline: none; }
+
+/* ======= components ======= */
+header {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  justify-content: space-between; }
+  header img {
+    margin: 1.6rem; }
+
+.header__hamburger {
+  background-image: url(../../img/hamburger.svg);
+  cursor: pointer;
+  width: 4rem; }
+  @media (min-width: 76.8rem) {
+    .header__hamburger {
+      display: none; } }
+
+nav {
+  display: none;
+  margin: 1.6rem;
+  position: relative; }
+  @media (min-width: 76.8rem) {
+    nav {
+      display: flex;
+      justify-content: space-between; } }
+
+.header__nav--items li {
+  display: inline-block;
+  margin-right: 0.8rem; }
+
+.header__nav--items a {
+  display: block;
+  font-size: 1.6rem;
+  text-align: center;
+  width: calc(67.8rem / 5); }
+
+.slide {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(67.8rem / 5);
+  height: 4px;
+  background: #FEA701;
+  transition: .4s; }
+
+header {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  justify-content: space-between; }
+  header img {
+    margin: 1.6rem; }
+
+.header__hamburger {
+  background-image: url(../../img/hamburger.svg);
+  cursor: pointer;
+  width: 4rem; }
+  @media (min-width: 76.8rem) {
+    .header__hamburger {
+      display: none; } }
+
+nav {
+  display: none;
+  margin: 1.6rem;
+  position: relative; }
+  @media (min-width: 76.8rem) {
+    nav {
+      display: flex;
+      justify-content: space-between; } }
+
+.header__nav--items li {
+  display: inline-block;
+  margin-right: 0.8rem; }
+
+.header__nav--items a {
+  display: block;
+  font-size: 1.6rem;
+  text-align: center;
+  width: calc(67.8rem / 5); }
+
+.slide {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(67.8rem / 5);
+  height: 4px;
+  background: #FEA701;
+  transition: .4s; }
+
+/* ======= Pages ======= */

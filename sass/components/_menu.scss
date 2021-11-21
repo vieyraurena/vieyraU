@@ -1,0 +1,15 @@
+
+.drawer {
+  background-color: $secondary-background;
+  border-bottom-left-radius: $size;
+  border-top-left-radius: $size;
+  box-shadow: 0 0 10px #85888C;
+  flex-direction: column;
+  font-size: $main-size-movil;
+  height: 100vh;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  transition: right 0.8s;
+  z-index: 1012;
+}

@@ -1,5 +1,12 @@
-$heading-color: #00f;
+/* ======= Utilities ======= */
+@import 'settings/variables';
+@import 'settings/type';
+@import 'settings/helpears';
+@import 'settings/globals';
 
-h1 {
-  color: $heading-color;
-}
+/* ======= components ======= */
+@import 'components/header';
+@import 'components/menu';
+
+/* ======= Pages ======= */
+@import 'pages/home';

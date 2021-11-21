@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  background-color: $main-background;
+  margin: 0;
+}
+
+.hidden {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  //background-size: 30px 15px;
+  border: none;
+  overflow: hidden;
+  margin: $main-size;
+  padding: $main-size;
+  text-indent: 100%;
+  white-space: nowrap;
+}
