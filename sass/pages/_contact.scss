@@ -2,53 +2,93 @@ form {
   display: flex;
   flex-direction: column;
   font-size: $small-size;
+  margin-bottom: 3.2rem;
+  border-radius: 0.8rem;
 
+  h4 {
+    color: red;
+  }
+  
   @media (min-width: 1080px) {
-    justify-content: start;
+    background: none;
     width: 50%;
   }
+}
 
+.form {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+
+  @media (min-width: 1080px) {
+   flex-direction: row;
+  }
 }
 
 .form_label {
   flex: 1 1 100%;
   font-family:$titles;
   text-transform: capitalize;
-  color: black;
+  color: $main-color;
   padding-bottom: 0.6rem;
 }
 
 input, textarea {
   background-color: white;
-  border: 0.1px solid #c4c4c4;
+  border: 0.1px solid $fourth-color;
   border-radius: 0.2rem;
   flex: 1 1 100%;
   font-family:$paragraf;
   margin-bottom: 1rem;
   outline: none;
   padding: 0.5rem 0.5rem;
+
+  @media (min-width: 1080px) {
+    background: none;
+  }
 }
 
 .form__title {
   font-size: $maxim-size-form;
+  padding-bottom: 2.4rem;
 }
-
-// .form__shape {
-//   margin-top: 6.3rem;
-//   position: absolute;
-//   right: 0;
-//   z-index: -1;
-// }
 
 .submit {
   align-self: flex-end;
-  background-color: $click;
+  background-color: $tone2-color;
   border: none;
   border-radius: 0.5rem;
   color: $main-background;
   cursor: pointer;
   flex: 0 1 auto;
   font-family: $bottoms;
-  padding: 0.6rem 1rem;
+  font-size: $small-size;
+  padding: 0.6rem $medium-size;
   text-transform: uppercase;
+  
+  @media (min-width: 1080px) {
+    font-size: $small-size;
+    padding: 0.8rem $medium-size;
+
+    &:hover {
+      background: $tone2-color;
+    }
+  }
+}
+
+.form__qr {
+  text-align: center;
+  margin-bottom: 3.2rem;
+
+  h2 {
+    color: $third-color;
+    font-size: 1.8rem;
+    font-weight: normal;
+    padding: 0;
+  }
+
+  img {
+    width: 50%;
+  }
 }

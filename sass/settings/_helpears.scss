@@ -72,7 +72,7 @@ body {
   background-color: $tone-color;
   height: 0.4rem;
   width: 6rem;
-
+  
   @media (min-width: 1080px) {
     transform: rotate(90deg);
   }
@@ -82,4 +82,9 @@ body {
   @media (min-width: 1080px) {
     transform: rotate(180deg);
   }
+}
+
+.js__green {
+  color: $third-color;
+  font-weight: bold;
 }
