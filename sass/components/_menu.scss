@@ -63,12 +63,13 @@ label{
   background-color: $third-color;
   transform: rotate(-45deg);
 }
+
 .menu__close-button:hover .rightleft{
   background-color: $third-color;
   transform: rotate(45deg);
 }
 
-.menu__close-button:hover label{
+.menu__close-button:hover .menu__close{
   opacity: 1;
 }
 

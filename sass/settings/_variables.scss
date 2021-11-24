@@ -1,4 +1,6 @@
 /* variables */
+$wrapper: 300px;
+$desktop-wrapper: 1080px;
 
 /*======== type ========= */
 $main-font: 'poppins';
@@ -24,6 +26,7 @@ $main-color: #262627;
 $fourth-color: #E7928A;
 $third-color:#045a54;
 $tone-color: #FEA701;
+$tone2-color: #521442;
 
 $paragraf-color: $main-color;
 $menu: $main-color;
@@ -31,7 +34,7 @@ $click: $third-color;
 $border: $fourth-color;
 
 /*========== backgrounds =========== */
-$main:#f7f6f2;
+$main:#f2f0e8;
 $gray: #f7f6f2;
 $third: #B3D8CB;
 $fourth: #EDCCC3;

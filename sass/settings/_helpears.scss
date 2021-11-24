@@ -8,6 +8,38 @@ body {
   margin: 0;
 }
 
+.wrapper {
+  width: $wrapper;
+  margin: 0 auto;
+
+  @media (min-width: 36rem) {
+    width: 45rem;
+  }
+
+  @media (min-width: 48rem) {
+    width: 60rem;
+  }
+
+  @media (min-width: 76.8rem) {
+    width: 72rem;
+  }
+
+  @media (min-width: 1080px) {
+   width: $desktop-wrapper;
+  }
+}
+
+.background {
+  background-image:  url(../../img/whiteShape.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 120%;
+  
+  @media (min-width: 1080px) {
+    background-size: 80%;
+   }
+}
+
 .hidden {
   background-color: transparent;
   background-repeat: no-repeat;
@@ -18,4 +50,36 @@ body {
   padding: $main-size;
   text-indent: 100%;
   white-space: nowrap;
+}
+
+.transition {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  left: 100%;
+  z-index: 1000;
+  background-color: #FEA701;
+  transition: 0.5s ease-out;
+}
+
+.js__active {
+  left: 0px;
+  transition: 0.5s ease-out;
+}
+
+.line {
+  background-color: $tone-color;
+  height: 0.4rem;
+  width: 6rem;
+
+  @media (min-width: 1080px) {
+    transform: rotate(90deg);
+  }
+}
+
+.line90 {
+  @media (min-width: 1080px) {
+    transform: rotate(180deg);
+  }
 }

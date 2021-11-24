@@ -2,6 +2,8 @@
 h1, h2, h3, h4 {
   font-family: $titles;
   text-transform: capitalize;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -29,6 +31,7 @@ p {
   font-family: $paragraf;
   font-size: $main-size;
   line-height: $line-height-medium;
+  margin: 0;
 }
 
 a {
