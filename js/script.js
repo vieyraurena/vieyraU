@@ -1,8 +1,5 @@
-let options = document.querySelectorAll('.header__nav--links');
-let slide = document.querySelector('.slide');
+import nav from './modules/nav.js';
+import menu from './modules/menu.js';
 
-options.forEach((ele, index) => {
-  ele.addEventListener('mouseover', () => {
-    slide.style.left = 100 / options.length * index+'%'
-  });
-});
+nav();
+menu();
