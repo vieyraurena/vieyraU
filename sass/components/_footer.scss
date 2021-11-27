@@ -1,9 +1,11 @@
 footer {
   align-items: center;
-  background-color: $main-color;
+  background-color: transparent;
+  //border-top: 0.4rem solid $main-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 10rem;
   width: 100%;
 
   span {
@@ -36,7 +38,6 @@ footer {
 
 .footer__links--box {
   padding: 0.2rem;
-  background-color: $fourth-color;
   width: 70%;
   
   &:hover {

@@ -29,6 +29,36 @@ body {
   }
 }
 
+.main__title {
+  color: $third-color;
+  margin-bottom: 7.2rem;
+  text-align: left;
+  
+  h1 {
+    font-size: 6.4rem;
+    font-weight: bold;
+  }
+
+  @media (min-width: 36rem) {
+    h1 {
+      font-size: 8.8rem
+    }
+  }
+
+  @media (min-width: 48rem) {
+    h1 {
+      font-size: 10rem;
+    }
+  }
+
+  @media (min-width: 76.8rem) {
+    h1 {
+      font-size: 15.5rem;
+    }
+  }
+
+}
+
 .background {
   background-image:  url(../../img/whiteShape.svg);
   background-repeat: no-repeat;
@@ -87,4 +117,21 @@ body {
 .js__green {
   color: $third-color;
   font-weight: bold;
+}
+
+.subtitle {
+  h2 {
+    margin-bottom: $main-size;
+    color: $third-color;
+  }
+
+  @media (min-width: 1080px) {
+    h2 {
+      font-size: $maxim-size;
+    }
+  }
+}
+
+.comment_name {
+  align-self: flex-end;
 }

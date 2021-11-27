@@ -29,6 +29,7 @@ nav {
   display: none;
   margin: $main-size;
   position: relative;
+
   @media (min-width: 76.8rem) {
     display: flex;
     justify-content: space-between;
@@ -40,6 +41,7 @@ nav {
     display: inline-block;
     margin-right: 0.8rem;
   }
+  
   a {
     display: block;
     font-size: $main-size;
