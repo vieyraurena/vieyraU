@@ -101,8 +101,8 @@ body {
   font-weight: bold; }
 
 .subtitle h2 {
-  margin-bottom: 1.6rem;
-  color: #045a54; }
+  color: #045a54;
+  margin-bottom: 1.6rem; }
 
 @media (min-width: 1080px) {
   .subtitle h2 {
@@ -326,7 +326,7 @@ footer {
   margin-top: 10rem;
   width: 100%; }
   footer span {
-    color: #E7928A;
+    color: #FF877B;
     font-family: "poppins";
     font-size: 1.4rem;
     font-weight: 300;
@@ -429,6 +429,24 @@ footer {
   font-weight: bold;
   padding-right: 0.8rem; }
 
+.project__tag {
+  width: 100%; }
+
+.project__tag--list {
+  display: grid;
+  column-gap: 0.8rem;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 0.8rem; }
+
+.project__tag--item {
+  align-items: center;
+  border: 1px solid #FF877B;
+  font-family: "poppins";
+  font-size: 1.4rem;
+  padding: 0.4rem;
+  text-align: center; }
+
 /* ======= Pages ======= */
 main {
   align-items: center;
@@ -516,7 +534,7 @@ form {
 
 input, textarea {
   background-color: white;
-  border: 0.1px solid #E7928A;
+  border: 0.1px solid #FF877B;
   border-radius: 0.2rem;
   flex: 1 1 100%;
   font-family: "montserrat";
@@ -652,3 +670,72 @@ input, textarea {
 
 .header__nav--about {
   border-bottom: 3px solid #262627; }
+
+.projects {
+  margin-bottom: 7.2rem;
+  margin-top: 7.2rem; }
+
+.projects__container {
+  margin: 0; }
+  .projects__container ul {
+    padding: 0; }
+  .projects__container a {
+    padding: 1.6rem;
+    color: #262627;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline; }
+  .projects__container div {
+    background-color: #FEA701;
+    -webkit-transition: width 1s, background 1s;
+    -moz-transition: width 1s, background 1s;
+    -o-transition: width 1s, background 1s;
+    transition: width 1s, background 1s;
+    width: 0; }
+    .projects__container div:hover {
+      width: 100%;
+      background: #FF877B; }
+
+.projects__list--li {
+  margin-bottom: 1.6rem;
+  padding: 1.6rem 1.6rem 1.6rem 0;
+  width: 300px; }
+
+#js__git--anim {
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease; }
+
+.project {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7.2rem; }
+  .project img {
+    width: 100%; }
+  @media (min-width: 70rem) {
+    .project {
+      flex-direction: row;
+      justify-content: space-between; }
+      .project img {
+        width: 80%; }
+      .project .project__content {
+        width: 50%; } }
+  @media (min-width: 1080px) {
+    .project img {
+      width: 100%; } }
+
+.project__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem; }
+  .project__content h2 {
+    margin-bottom: 1.6rem; }
+  .project__content p {
+    line-height: 2.8rem; }
+  .project__content a {
+    font-size: 1.6rem;
+    color: #521442;
+    align-self: flex-end; }
