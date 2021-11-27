@@ -1,0 +1,31 @@
+.comments {
+  display: flex;
+  font-family: $secondary-font;
+  flex-direction: column;
+  margin-bottom: 7.2rem;
+  
+  @media (min-width: 48rem) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+} 
+
+.comments__comment {
+  display: flex;
+  margin-bottom: $large-size;
+
+  p {
+    line-height: $line-height-medium + 1;
+  }
+  
+  @media (min-width: 76.8rem) {
+    margin-right: $large-size;
+  }
+}
+
+
+.comments_span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-right: 0.8rem;
+}
