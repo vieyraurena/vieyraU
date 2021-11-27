@@ -1,13 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VieyraU</title>
-  <link rel="stylesheet" href="public/css/styles.css">
-</head>
-<body>
-  <h1>Portfolio 2021</h1>
-  <script src="js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VieyraU</title>
+    <link rel="stylesheet" href="public/css/styles.css">
+  </head>
+  <body class="background">
+    <div class="transition js__active"></div>
+
+    <header class="header">
+      <img src="img/logo.svg" alt="logo's VieyraU">
+      <button class="header__hamburger hidden"></button>
+
+      <nav class="header__nav">
+        <ul class="header__nav--items">
+          <li class="header__nav--home">
+            <a class="header__nav--links" href="#">Home</a>
+          </li>
+          <li>
+            <a class="header__nav--links" href="./myBio/index.html">My Bio</a>
+          </li>
+          <li>
+            <a class="header__nav--links" href="webDesign.html">web design</a>
+          </li>
+          <li>
+            <a class="header__nav--links" href="webDeveloper.html">web developer</a>
+          </li>
+          <li>
+            <a href="./contact/index.html" class="header__nav--links">contact</a>
+          </li>
+        </ul>
+        <span class="slide"></span>
+      </nav>
+    </header>
+
+    <!--MENU-->
+    <div class="menu js-menu">
+      <div class="menu__close-button">
+        <div class="leftright"></div>
+        <div class="rightleft"></div>
+        <label class="menu__close">close</label>
+      </div>
+
+      <div class="menu__wrapper">  
+        <ul class="js__menu--items">
+          <li>
+            <a href="index.html" class="menu__link">Home</a>
+          </li>
+          <li>
+            <a href="./myBio/index.html" class="menu__link">My Bio</a>
+          </li>
+          <li>
+            <a href="" class="menu__link">Web Design</a>
+          </li>
+          <li>
+            <a href="" class="menu__link">Web Developer</a>
+          </li>
+          <li>
+            <a href="./contact/index.html" class="menu__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <span class="menu__name">VieyraUreñaBravo</span>
+    </div>
+
+    <main class="wrapper main__container">
+      <img class="main__img" src="img/yoImg.png" alt="">
+      <div class="main__content">
+        <h1>HELLO!!</h1>
+        <p>Nice to meet you, I’am Vieyra Ureña. A passionate UI/UX design, graphic design & front-end Developer. I’am
+          constantly observing the things, being curious always asking why and learning. I love grow personal and
+          professionally.
+        </p>
+        <a href="" class="main__link">Read my Bio</a>
+      </div>
+
+      <div class="social">
+        <div class="social__container">
+          <div class="line"></div>
+          <div class="social__links">
+            <a href="" class="social__links--box">
+              <img src="img/linkedin.svg" alt="link to vieyra's linkedin">
+            </a>
+            <a href="" class="social__links--box">
+              <img src="img/github.svg" alt="link to vieyra's github">
+            </a>
+            <a href="" class="social__links--box">
+              <img src="img/behance.svg" alt="link to vieyra's behance">
+            </a>
+          </div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </main>
+    
+
+    <script src="js/script.js" type="module"></script>
+  </body>
 </html

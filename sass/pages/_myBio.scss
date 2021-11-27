@@ -1,0 +1,155 @@
+/* about me */
+// .onda {
+//   width: 100%;
+//   background-image: url(../../img/fondoDesign1.svg);
+//   background-repeat: no-repeat;
+//   background-size: content;
+// }
+
+.main__title {
+  text-align: right;
+  
+  h1 {
+    font-size: 6.4rem;
+    font-weight: bold;
+  }
+
+  @media (min-width: 36rem) {
+    h1 {
+      font-size: 8.8rem
+    }
+  }
+
+  @media (min-width: 48rem) {
+    h1 {
+      font-size: 10rem;
+    }
+  }
+
+  @media (min-width: 76.8rem) {
+    h1 {
+      font-size: 15.5rem;
+    }
+  }
+
+  @media (min-width: 1080px) {
+    text-align: center;
+  }
+
+}
+
+.bio {
+  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  margin-top: $main-size;
+
+  @media (min-width: 76.8rem) {
+    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}
+
+.bio__container {
+  @media (min-width: 76.8rem) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 82.4rem;
+  }
+}
+
+.bio__content {
+  margin-bottom: $main-size;
+  p {
+    line-height: 2.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  @media (min-width: 76.8rem) {
+    width: 40rem;
+    h1 {
+      flex: 1 1 auto;
+    }
+  }
+}
+
+.skills {
+  //align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  
+  @media (min-width: 48rem) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.skills__box {
+  border: 2px solid $main-color;
+  flex-direction: column;
+  line-height: 2.4rem;
+  margin-bottom: 3.2rem;
+  padding: $small-size;
+  text-align: center;
+  width: 100%;
+  
+  img {
+    margin-bottom: $main-size;
+    min-width: 40%;
+    width: 30%;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+
+  @media (min-width: 48rem) {
+    margin-right: $main-size;
+  }
+}
+
+.skills__list {
+  font-family: $paragraf;
+  font-size: $main-size;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2.4rem;
+  margin: 0 auto;
+  padding: 0px;
+  text-transform: capitalize;
+  width: 29rem;
+
+  h3 {
+    margin-bottom: $main-size;
+  }
+
+  @media (min-width: 48rem) {
+    width: 18rem;
+    h3 {
+      font-size: $main-size;
+    }
+  }
+
+  @media (min-width: 1080px) {
+    width: 100%;
+    h3 {
+      font-size: $large-size;
+    }
+  }
+}
+
+.skills__list--soft {
+  padding-bottom: 5.2rem;
+}
+
+.scroll-index {
+  margin: 4rem 6rem;
+  justify-content: flex-end;
+  scroll-behavior: smooth;
+}
+
+.header__nav--about {
+  border-bottom: 3px solid $main-color;
+}

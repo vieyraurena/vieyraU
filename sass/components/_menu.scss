@@ -1,0 +1,126 @@
+.menu {
+  align-items: center;
+  background-color: $tone-color;
+  display: flex;
+  flex-direction: column;
+  font-size: $maxim-size;
+  justify-content: center;
+  height: 100vh;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  transition: right 0.8s;
+  width: 100%;
+  z-index: 4;
+}
+
+.menu__close-button {
+  cursor: pointer;
+  height: 5rem;
+  margin-bottom: 10rem;
+  position: relative;
+  width: 5rem;
+}
+
+.leftright{
+  height: 4px;
+  width: 50px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: $main-color;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all .3s ease-in;
+}
+
+.rightleft{
+  background-color: $main-color;
+  border-radius: 2px;
+  height: 4px;
+  margin-top: 24px;
+  position: absolute;
+  transform: rotate(-45deg);
+  transition: all .3s ease-in;
+  width: 50px;
+}
+
+.menu__close {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif; 
+  font-size: .6em;
+  letter-spacing: 2px;
+  opacity: 0;
+  text-transform: uppercase;
+  transition: all .3s ease-in;
+}
+
+.menu__close {
+  margin: 60px 0 0 0;
+  position: absolute;
+}
+
+.menu__close-button:hover .leftright{
+  background-color: $third-color;
+  transform: rotate(-45deg);
+}
+
+.menu__close-button:hover .rightleft{
+  background-color: $third-color;
+  transform: rotate(45deg);
+}
+
+.menu__close-button:hover .menu__close{
+  opacity: 1;
+}
+
+.menu__wrapper {
+  line-height: 5rem;
+  text-align: center;
+}
+
+.menu__link {
+  letter-spacing: 0;
+  &:hover {
+    color: $main-color;
+  }
+}
+
+.menu__link:hover,
+.menu__link:active {
+  letter-spacing: 5px;
+}
+
+.menu__link:after,
+.menu__link:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba($main-color, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.menu__link:hover:after,
+.menu__link:hover:before {
+  backface-visibility: hidden;
+  border-color: $main-color;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.menu__link:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+.menu__name {
+  bottom: $size;
+  font-family: $titles;
+  font-size: $main-size;
+  font-weight: lighter;
+  position: absolute;
+}

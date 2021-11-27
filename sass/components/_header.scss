@@ -1,0 +1,59 @@
+header {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $maxim-size-form;
+  position: sticky;
+  
+  @media (min-width: 1080px) {
+    margin-bottom: 0;
+  }
+
+  img {
+    margin: $main-size;
+    //padding: 0.8rem;
+  }
+}
+
+.header__hamburger  {
+  background-image: url(../../img/hamburger.svg);
+  cursor: pointer;
+  width: 4rem;
+  @media (min-width: 76.8rem) {
+    display: none;
+  }
+}
+
+nav {
+  display: none;
+  margin: $main-size;
+  position: relative;
+  @media (min-width: 76.8rem) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__nav--items {
+  li {
+    display: inline-block;
+    margin-right: 0.8rem;
+  }
+  a {
+    display: block;
+    font-size: $main-size;
+    text-align: center;
+    width: calc(67.8rem / 5);
+  }
+}
+
+.slide {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(67.8rem / 5);
+  height: 4px;
+  background: $tone-color;
+  transition: .4s;
+}

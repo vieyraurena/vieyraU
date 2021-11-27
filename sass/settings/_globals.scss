@@ -1,0 +1,62 @@
+/* Titles */
+h1, h2, h3, h4 {
+  font-family: $titles;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: $maxim-size;
+}
+
+h2 {
+  font-size: $large-size;
+  //padding-top: 5rem;
+
+  @media (min-width: 1080px) {
+    padding-top: 3rem;
+  }
+}
+
+h3 {
+  font-size: $medium-size;
+  font-weight: bold;
+  letter-spacing: $letter-space-small;
+  padding-left: 3rem;
+}
+
+h4 {
+  font-size: $medium-size;
+}
+
+// paragraph
+p {
+  font-family: $paragraf;
+  font-size: $main-size;
+  line-height: $line-height-medium;
+  margin: 0;
+}
+
+a {
+  color: $paragraf-color;
+  font-family: $links;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  &:hover {
+    color: $click;
+  }
+}
+
+// list
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+// Button
+button {
+  outline: none;
+}
