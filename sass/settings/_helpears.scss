@@ -103,8 +103,16 @@ body::-webkit-scrollbar-thumb:hover {
   z-index: -1;
 
   @media (min-width: 36rem) {
-    width: 90vmax;
+    width: 70vmax;
     height: 90vmax;
+  }
+
+  @media (min-width: 48rem) {
+    width: 80vmax;
+  }
+
+  @media (min-width: 76.8rem) {
+    width: 90vmax;
   }
 
 }
