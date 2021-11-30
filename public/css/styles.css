@@ -76,10 +76,10 @@ body::-webkit-scrollbar-thumb:hover {
     .background {
       background-image: none; } }
 
-body::before {
+.container::before {
   position: absolute;
   width: 48vmax;
-  height: 80vmax;
+  height: 100vmax;
   content: '';
   border-radius: 39% 61% 62% 38% / 30% 49% 51% 70%;
   background: white;
@@ -88,13 +88,9 @@ body::before {
   top: -20vmin;
   z-index: -1; }
   @media (min-width: 36rem) {
-    body::before {
-      width: 80vmax;
-      height: 80vmax; } }
-  @media (min-width: 1080px) {
-    body::before {
-      width: 80vmax;
-      height: 80vmax; } }
+    .container::before {
+      width: 90vmax;
+      height: 90vmax; } }
 
 @keyframes wave {
   20% {
@@ -161,16 +157,13 @@ body::before {
   background-image: url(../../img/upArrow.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 32px;
+  background-size: 48px;
   bottom: 1.6rem;
   cursor: pointer;
   padding: 2.4rem;
   position: fixed;
   right: 1.6rem;
   writing-mode: vertical-lr; }
-  @media (min-width: 1080px) {
-    .upArrow {
-      background-size: 42px; } }
 
 h1, h2, h3, h4 {
   font-family: "poppins";
@@ -585,11 +578,13 @@ main {
       color: #262627; }
 
 form {
+  border: 0.05rem solid #FF877B;
+  border-radius: 0.8rem;
   display: flex;
   flex-direction: column;
   font-size: 1.4rem;
-  border-radius: 0.8rem;
-  width: 100%; }
+  padding: 1.6rem;
+  width: 90%; }
   form h4 {
     color: red; }
   @media (min-width: 1080px) {

@@ -1,9 +1,12 @@
 form {
+  // background: $fourth-color;
+  border: 0.05rem solid $fourth-color;
+  border-radius: 0.8rem;
   display: flex;
   flex-direction: column;
   font-size: $small-size;
-  border-radius: 0.8rem;
-  width: 100%;
+  padding: $main-size;
+  width: 90%;
 
   h4 {
     color: red;

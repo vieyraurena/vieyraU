@@ -11,186 +11,188 @@
     <div class="transition js__active"></div>
     <a href="#" class="upArrow"></a>
 
-    <header class="header">
-      <a href="../index.html">
-        <img src="../img/logo.svg" alt="logo's VieyraU">
-      </a>
-      <button class="header__hamburger hidden"></button>
-
-      <nav class="header__nav">
-        <ul class="header__nav--items">
-          <li class="header__nav--home">
-            <a class="header__nav--links" href="../index.html">Home</a>
-          </li>
-          <li>
-            <a class="header__nav--links" href="../myBio/index.html">My Bio</a>
-          </li>
-          <li>
-            <a class="header__nav--links" href="index.html">My Projects</a>
-          </li>
-          <li>
-            <a href="../contact/index.html" class="header__nav--links">contact</a>
-          </li>
-        </ul>
-        <span class="slide"></span>
-      </nav>
-    </header>
-
-    <!--MENU-->
-    <div class="menu js-menu">
-      <div class="menu__close-button">
-        <div class="leftright"></div>
-        <div class="rightleft"></div>
-        <label class="menu__close">close</label>
+    <div class="container">
+      <header class="header">
+        <a href="../index.html">
+          <img src="../img/logo.svg" alt="logo's VieyraU">
+        </a>
+        <button class="header__hamburger hidden"></button>
+  
+        <nav class="header__nav">
+          <ul class="header__nav--items">
+            <li class="header__nav--home">
+              <a class="header__nav--links" href="../index.html">Home</a>
+            </li>
+            <li>
+              <a class="header__nav--links" href="../myBio/index.html">My Bio</a>
+            </li>
+            <li>
+              <a class="header__nav--links" href="index.html">My Projects</a>
+            </li>
+            <li>
+              <a href="../contact/index.html" class="header__nav--links">contact</a>
+            </li>
+          </ul>
+          <span class="slide"></span>
+        </nav>
+      </header>
+  
+      <!--MENU-->
+      <div class="menu js-menu">
+        <div class="menu__close-button">
+          <div class="leftright"></div>
+          <div class="rightleft"></div>
+          <label class="menu__close">close</label>
+        </div>
+  
+        <div class="menu__container">  
+          <ul class="js__menu--items">
+            <li>
+              <a href="../index.html" class="menu__link">Home</a>
+            </li>
+            <li>
+              <a href="../myBio/index.html" class="menu__link">My Bio</a>
+            </li>
+            <li>
+              <a href="index.html" class="menu__link">My Projects</a>
+            </li>
+            <li>
+              <a href="../contact/index.html" class="menu__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <span class="menu__name">VieyraUreñaBravo</span>
       </div>
-
-      <div class="menu__container">  
-        <ul class="js__menu--items">
-          <li>
-            <a href="../index.html" class="menu__link">Home</a>
-          </li>
-          <li>
-            <a href="../myBio/index.html" class="menu__link">My Bio</a>
-          </li>
-          <li>
-            <a href="index.html" class="menu__link">My Projects</a>
-          </li>
-          <li>
-            <a href="../contact/index.html" class="menu__link">Contact</a>
-          </li>
-        </ul>
+  
+      <section class="projects wrapper">
+        <div class="subtitle wrapper">
+          <h2>My Projects</h2>
+        </div>
+        <div class="projects__container">
+          <ul class="projects__list">
+            <div>
+              <li id="js__git--anim" class="projects__list--li">
+                <a href="#crono">Cronologías de lo Invisible</a>
+              </li>
+            </div>
+            <div>
+              <li id="js__git--anim" class="projects__list--li">
+                <a href="#bulu">Ecommerce Bulu</a>
+              </li>
+            </div>
+            <div>
+              <li id="js__git--anim" class="projects__list--li">
+                <a href="#music">Music Player</a>
+              </li>
+            </div>
+            <div>
+              <li id="js__git--anim" class="projects__list--li">
+                <a href="#practices">Practices</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </section>
+  
+  
+      <section id="crono" class="project wrapper">
+        <div class="project__content">
+          <h2>Cronologías de lo Invisible</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Libero nobis debitis dicta, natus neque similique eaque fuga est alias voluptatum minima aliquam qui. Magni, 
+            repellendus recusandae quasi itaque minus reiciendis.</p>
+          <div class="project__tag">
+            <ul class="project__tag--list">
+              <li class="project__tag--item">NextJs</li>
+              <li class="project__tag--item">Chakra UI</li>
+              <li class="project__tag--item">Dato Cms</li>
+              <li class="project__tag--item">Cloudinary</li>
+              <li class="project__tag--item">Netlify</li>
+            </ul>
+          </div>
+          <a href="https://cronologíasdeloinvisible.com" target="_blank">Visit site</a>
+        </div>
+        <div>
+          <img class="wrapper" src="../img/cro.png" alt="">
+        </div>
+      </section>
+  
+      <section id="bulu" class="project wrapper">
+        <div class="project__content">
+          <h2>Ecommerce Bulu</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Libero nobis debitis dicta, natus neque similique eaque fuga est alias voluptatum minima aliquam qui. Magni, 
+            repellendus recusandae quasi itaque minus reiciendis.</p>
+          <div class="project__tag">
+            <ul class="project__tag--list">
+              <li class="project__tag--item">JavaScript</li>
+              <li class="project__tag--item">Css</li>
+              <li class="project__tag--item">HTML</li>
+            </ul>
+          </div>
+          <a href="https://vieyraurena.github.io/ecommerce-Bulu/" target="_blank">Visit site</a>
+        </div>
+        <div>
+          <img class="wrapper" src="../img/bulu.png" alt="">
+        </div>
+      </section>
+  
+      <section id="music" class="project wrapper">
+        <div class="project__content">
+          <h2>Music Player</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Libero nobis debitis dicta, natus neque similique eaque fuga est alias voluptatum minima aliquam qui. Magni, 
+            repellendus recusandae quasi itaque minus reiciendis.</p>
+          <div class="project__tag">
+            <ul class="project__tag--list">
+              <li class="project__tag--item">JavaScript</li>
+              <li class="project__tag--item">Css</li>
+              <li class="project__tag--item">HTML</li>
+              <li class="project__tag--item">Nodejs</li>
+            </ul>
+          </div>
+          <a href="https://jeantoru.github.io/music_squirrels/" target="_blank">Visit site</a>
+        </div>
+        <div>
+          <img class="wrapper" src="../img/musicPlayer.png" alt="">
+        </div>
+      </section>
+  
+      <div class="project__content wrapper">
+        <h2>Practices</h2>
       </div>
-      <span class="menu__name">VieyraUreñaBravo</span>
+      <section id="practices" class="project practices wrapper">
+        <div class="practices__container">
+          <img class="practices__img wrapper" src="../img/contries.png" alt="">
+        </div>
+        <div class="practices__container">
+          <img class="practices__img wrapper" src="../img/bitcoin.png" alt="">
+        </div>
+        <div class="practices__container">
+          <img class="practices__img wrapper" src="../img/form.png" alt="">
+        </div>
+      </section>
+  
+  
+      <footer>
+        <div class="footer__container">
+          <div class="line line90"></div>
+          <div class="footer__links">
+            <a href="https://www.linkedin.com/in/vieyraurenabravo/" target="_blank">
+              <img class="footer__links--box" src="../img/linkedin.svg" alt="">
+            </a>
+            <a href="https://github.com/vieyraurena" target="_blank">
+              <img src="../img/github.svg" alt="" class="footer__links--box">
+            </a>
+            <a href="">
+              <img src="../img/behance.svg" alt="" class="footer__links--box">
+            </a>
+          </div>
+          <div class="line line90"></div>
+        </div>
+        <span>© 2021 VieyraUreñaBravo</span>
+      </footer>
     </div>
-
-    <section class="projects wrapper">
-      <div class="subtitle wrapper">
-        <h2>My Projects</h2>
-      </div>
-      <div class="projects__container">
-        <ul class="projects__list">
-          <div>
-            <li id="js__git--anim" class="projects__list--li">
-              <a href="#crono">Cronologías de lo Invisible</a>
-            </li>
-          </div>
-          <div>
-            <li id="js__git--anim" class="projects__list--li">
-              <a href="#bulu">Ecommerce Bulu</a>
-            </li>
-          </div>
-          <div>
-            <li id="js__git--anim" class="projects__list--li">
-              <a href="#music">Music Player</a>
-            </li>
-          </div>
-          <div>
-            <li id="js__git--anim" class="projects__list--li">
-              <a href="#practices">Practices</a>
-            </li>
-          </div>
-        </ul>
-      </div>
-    </section>
-
-
-    <section id="crono" class="project wrapper">
-      <div class="project__content">
-        <h2>Cronologías de lo Invisible</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Libero nobis debitis dicta, natus neque similique eaque fuga est alias voluptatum minima aliquam qui. Magni, 
-          repellendus recusandae quasi itaque minus reiciendis.</p>
-        <div class="project__tag">
-          <ul class="project__tag--list">
-            <li class="project__tag--item">NextJs</li>
-            <li class="project__tag--item">Chakra UI</li>
-            <li class="project__tag--item">Dato Cms</li>
-            <li class="project__tag--item">Cloudinary</li>
-            <li class="project__tag--item">Netlify</li>
-          </ul>
-        </div>
-        <a href="">Visit site</a>
-      </div>
-      <div>
-        <img class="wrapper" src="../img/cro.png" alt="">
-      </div>
-    </section>
-
-    <section id="bulu" class="project wrapper">
-      <div class="project__content">
-        <h2>Ecommerce Bulu</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Libero nobis debitis dicta, natus neque similique eaque fuga est alias voluptatum minima aliquam qui. Magni, 
-          repellendus recusandae quasi itaque minus reiciendis.</p>
-        <div class="project__tag">
-          <ul class="project__tag--list">
-            <li class="project__tag--item">JavaScript</li>
-            <li class="project__tag--item">Css</li>
-            <li class="project__tag--item">HTML</li>
-          </ul>
-        </div>
-        <a href="">Visit site</a>
-      </div>
-      <div>
-        <img class="wrapper" src="../img/bulu.png" alt="">
-      </div>
-    </section>
-
-    <section id="music" class="project wrapper">
-      <div class="project__content">
-        <h2>Music Player</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Libero nobis debitis dicta, natus neque similique eaque fuga est alias voluptatum minima aliquam qui. Magni, 
-          repellendus recusandae quasi itaque minus reiciendis.</p>
-        <div class="project__tag">
-          <ul class="project__tag--list">
-            <li class="project__tag--item">JavaScript</li>
-            <li class="project__tag--item">Css</li>
-            <li class="project__tag--item">HTML</li>
-            <li class="project__tag--item">Nodejs</li>
-          </ul>
-        </div>
-        <a href="">Visit site</a>
-      </div>
-      <div>
-        <img class="wrapper" src="../img/musicPlayer.png" alt="">
-      </div>
-    </section>
-
-    <div class="project__content wrapper">
-      <h2>Practices</h2>
-    </div>
-    <section id="practices" class="project practices wrapper">
-      <div class="practices__container">
-        <img class="practices__img wrapper" src="../img/contries.png" alt="">
-      </div>
-      <div class="practices__container">
-        <img class="practices__img wrapper" src="../img/bitcoin.png" alt="">
-      </div>
-      <div class="practices__container">
-        <img class="practices__img wrapper" src="../img/form.png" alt="">
-      </div>
-    </section>
-
-
-    <footer>
-      <div class="footer__container">
-        <div class="line line90"></div>
-        <div class="footer__links">
-          <a href="https://www.linkedin.com/in/vieyraurenabravo/" target="_blank">
-            <img class="footer__links--box" src="../img/linkedin.svg" alt="">
-          </a>
-          <a href="https://github.com/vieyraurena" target="_blank">
-            <img src="../img/github.svg" alt="" class="footer__links--box">
-          </a>
-          <a href="">
-            <img src="../img/behance.svg" alt="" class="footer__links--box">
-          </a>
-        </div>
-        <div class="line line90"></div>
-      </div>
-      <span>© 2021 VieyraUreñaBravo</span>
-    </footer>
 
 
     <script src="../js/script.js" type="module"></script>

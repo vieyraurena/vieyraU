@@ -90,10 +90,10 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
-body::before {
+.container::before {
   position: absolute;
   width: 48vmax;
-  height: 80vmax;
+  height: 100vmax;
   content: '';
   border-radius: 39% 61% 62% 38% / 30% 49% 51% 70% ;
   background: white;
@@ -103,14 +103,10 @@ body::before {
   z-index: -1;
 
   @media (min-width: 36rem) {
-    width: 80vmax;
-    height: 80vmax;
+    width: 90vmax;
+    height: 90vmax;
   }
-  
-  @media (min-width: 1080px) {
-    width: 80vmax;
-    height: 80vmax;
-   }
+
 }
 
 @keyframes wave {
@@ -204,15 +200,11 @@ body::before {
   background-image: url(../../img/upArrow.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 32px;
+  background-size: 48px;
   bottom: $main-size;
   cursor: pointer;
   padding: $maxim-size;
   position: fixed;
   right: $main-size;
   writing-mode: vertical-lr;
-  
-  @media (min-width: 1080px) {
-    background-size: 42px;
-  }
 }
