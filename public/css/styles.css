@@ -553,7 +553,7 @@ main {
     padding-bottom: 1rem;
     float: left;
     position: relative;
-    width: 15rem; }
+    width: 13.5rem; }
     .main__content h1 span {
       position: absolute;
       right: 0;
@@ -589,7 +589,7 @@ form {
     color: red; }
   @media (min-width: 1080px) {
     form {
-      background: none;
+      border: none;
       width: 50%; } }
 
 .form {
@@ -708,10 +708,22 @@ input, textarea {
     min-width: 40%;
     width: 30%; }
   .skills__box h3 {
+    margin-bottom: 1.6rem;
+    padding-left: 0;
     text-align: center; }
   @media (min-width: 48rem) {
     .skills__box {
       margin-right: 1.6rem; } }
+  @media (min-width: 48rem) {
+    .skills__box {
+      width: 18rem; }
+      .skills__box h3 {
+        font-size: 1.6rem; } }
+  @media (min-width: 1080px) {
+    .skills__box {
+      width: 100%; }
+      .skills__box h3 {
+        font-size: 2rem; } }
 
 .skills__list {
   font-family: "montserrat";
@@ -722,19 +734,7 @@ input, textarea {
   margin: 0 auto;
   padding: 0px;
   text-transform: capitalize;
-  width: 29rem; }
-  .skills__list h3 {
-    margin-bottom: 1.6rem; }
-  @media (min-width: 48rem) {
-    .skills__list {
-      width: 18rem; }
-      .skills__list h3 {
-        font-size: 1.6rem; } }
-  @media (min-width: 1080px) {
-    .skills__list {
-      width: 100%; }
-      .skills__list h3 {
-        font-size: 2rem; } }
+  width: 100%; }
 
 .skills__list--soft {
   padding-bottom: 5.2rem; }

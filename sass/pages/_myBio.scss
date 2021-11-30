@@ -72,27 +72,13 @@
   }
   
   h3 {
+    margin-bottom: $main-size;
+    padding-left: 0;
     text-align: center;
   }
 
   @media (min-width: 48rem) {
     margin-right: $main-size;
-  }
-}
-
-.skills__list {
-  font-family: $paragraf;
-  font-size: $main-size;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 2.4rem;
-  margin: 0 auto;
-  padding: 0px;
-  text-transform: capitalize;
-  width: 29rem;
-
-  h3 {
-    margin-bottom: $main-size;
   }
 
   @media (min-width: 48rem) {
@@ -108,6 +94,19 @@
       font-size: $large-size;
     }
   }
+}
+
+.skills__list {
+  font-family: $paragraf;
+  font-size: $main-size;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2.4rem;
+  margin: 0 auto;
+  padding: 0px;
+  text-transform: capitalize;
+  width: 100%;
+
 }
 
 .skills__list--soft {
