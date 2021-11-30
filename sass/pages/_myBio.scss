@@ -49,6 +49,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 7.2rem;
+  width: 100%;
   
   @media (min-width: 48rem) {
     flex-direction: row;
@@ -63,7 +64,6 @@
   margin-bottom: 3.2rem;
   padding: $small-size;
   text-align: center;
-  width: 100%;
   
   img {
     margin-bottom: $main-size;

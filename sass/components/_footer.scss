@@ -22,7 +22,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2.4rem;
+  padding: $main-size;
   width: 25.2rem;
   
   @media (min-width: 1080px) {
@@ -49,15 +49,19 @@ footer {
   }
 }
 
+.footer__home {
+  @media (min-width: 1080px) {
+    display: none;
+  }
+}
+
 .social {
-  align-items: center;
-  bottom: $size;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
+  display: none;
 
   @media (min-width: 1080px) {
+    align-items: center;
+    display: flex;
+    justify-content: center;
     position: static;
     width: 3.2rem;
     order: 3;

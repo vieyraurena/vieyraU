@@ -18,6 +18,7 @@ main {
 
 .main__img {
   margin-bottom: $maxim-size-form;
+  width: 25rem;
   
   @media (min-width: 36rem) {
     width: 25rem;
@@ -52,7 +53,25 @@ main {
     font-size: $maxim-size-form;
     text-transform: uppercase;
     padding-bottom: $size;
+    float: left;
+    position: relative;
+    width: 15rem;
+
+    span {
+      position:absolute;
+      right:0;
+      width:0;
+      // border-left: 1px solid $tone-color;
+      animation: write 2s steps(7) infinite alternate;
+      background:white;
+    }
+
+    @keyframes write {
+      from { width: 100% }
+      to {width: 0}
+    }
   }
+
   
   p {
     line-height: 3rem;
@@ -64,6 +83,7 @@ main {
     color: $tone2-color;
     flex: 0 1 auto;
     font-size: $main-size;
+
     &:hover {
       color: $main-color;
     }

@@ -73,9 +73,13 @@
   opacity: 1;
 }
 
-.menu__wrapper {
+.menu__container {
   line-height: 5rem;
   text-align: center;
+
+  a {
+    color: $main-color;
+  }
 }
 
 .menu__link {

@@ -1,11 +1,31 @@
 html {
   scroll-behavior: smooth;
   font-size: 10px;
+  position: relative;
 }
 
 body {
   background-color: $main-background;
   margin: 0;
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #ddd; 
+  border-radius: 0.8rem;;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $tone-color; 
+  border-radius: 0.8rem;;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: $fourth-color; 
 }
 
 .wrapper {
@@ -65,10 +85,54 @@ body {
   background-position: left;
   background-size: 120%;
   
+  @media (min-width: 48rem) {
+    background-image: none;
+  }
+}
+
+body::before {
+  position: absolute;
+  width: 48vmax;
+  height: 80vmax;
+  content: '';
+  border-radius: 39% 61% 62% 38% / 30% 49% 51% 70% ;
+  background: white;
+  animation: wave 8.5s linear infinite;
+  left: -20vmin;
+  top: -20vmin;
+  z-index: -1;
+
+  @media (min-width: 36rem) {
+    width: 80vmax;
+    height: 80vmax;
+  }
+  
   @media (min-width: 1080px) {
-    background-size: 80%;
+    width: 80vmax;
+    height: 80vmax;
    }
 }
+
+@keyframes wave {
+  
+  20% {
+    border-radius: 31% 69% 73% 27% / 54% 59% 41% 46%   ;
+  }
+
+  40% {
+    border-radius: 32% 68% 59% 41% / 54% 47% 53% 46%   ;
+  }
+
+  60% {
+    border-radius: 54% 46% 70% 30% / 54% 31% 69% 46%   ;
+  }
+  
+  80% {
+    border-radius: 66% 34% 53% 47% / 54% 31% 69% 46%  ;
+  }
+
+}
+
 
 .hidden {
   background-color: transparent;
@@ -134,4 +198,21 @@ body {
 
 .comment_name {
   align-self: flex-end;
+}
+
+.upArrow {
+  background-image: url(../../img/upArrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  bottom: $main-size;
+  cursor: pointer;
+  padding: $maxim-size;
+  position: fixed;
+  right: $main-size;
+  writing-mode: vertical-lr;
+  
+  @media (min-width: 1080px) {
+    background-size: 42px;
+  }
 }

@@ -57,11 +57,12 @@
 .project {
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   margin-bottom: 7.2rem;
 
   img {
     width: 100%;
+    margin-bottom: $main-size;
   }
 
   @media (min-width: 70rem) {
@@ -101,5 +102,16 @@
     font-size: $main-size;
     color: $tone2-color;
     align-self: flex-end;
+  }
+}
+
+.practices__img {
+  border: 2px solid $main-color;
+  margin-bottom: $main-size;
+}
+
+.practices__container {
+  @media (min-width: 1080px) {
+    margin-right: $main-size;
   }
 }
