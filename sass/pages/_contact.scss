@@ -11,6 +11,14 @@ form {
     color: red;
   }
   
+  @media (min-width: 36rem) {
+    width: 70%;
+  }
+
+  @media (min-width: 48rem) {
+    width: 60%;
+  }
+
   @media (min-width: 1080px) {
     border: none;
     width: 50%;

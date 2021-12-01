@@ -31,20 +31,21 @@ body::-webkit-scrollbar-thumb:hover {
 .wrapper {
   width: $wrapper;
   margin: 0 auto;
+  width: 85%;
 
-  @media (min-width: 36rem) {
-    width: 45rem;
-  }
+  // @media (min-width: 36rem) {
+  //   width: 45rem;
+  // }
 
-  @media (min-width: 48rem) {
-    width: 60rem;
-  }
+  // @media (min-width: 48rem) {
+  //   width: 60rem;
+  // }
 
-  @media (min-width: 76.8rem) {
-    width: 72rem;
-  }
+  // @media (min-width: 76.8rem) {
+  //   width: 72rem;
+  // }
 
-  @media (min-width: 1080px) {
+  @media (min-width: 1400px) {
    width: $desktop-wrapper;
   }
 }

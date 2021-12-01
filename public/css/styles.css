@@ -36,19 +36,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 .wrapper {
   width: 300px;
-  margin: 0 auto; }
-  @media (min-width: 36rem) {
+  margin: 0 auto;
+  width: 85%; }
+  @media (min-width: 1400px) {
     .wrapper {
-      width: 45rem; } }
-  @media (min-width: 48rem) {
-    .wrapper {
-      width: 60rem; } }
-  @media (min-width: 76.8rem) {
-    .wrapper {
-      width: 72rem; } }
-  @media (min-width: 1080px) {
-    .wrapper {
-      width: 1080px; } }
+      width: 1200px; } }
 
 .main__title {
   color: #045a54;
@@ -593,6 +585,12 @@ form {
   width: 90%; }
   form h4 {
     color: red; }
+  @media (min-width: 36rem) {
+    form {
+      width: 70%; } }
+  @media (min-width: 48rem) {
+    form {
+      width: 60%; } }
   @media (min-width: 1080px) {
     form {
       border: none;
