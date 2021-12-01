@@ -81,11 +81,11 @@ body::-webkit-scrollbar-thumb:hover {
   z-index: -1; }
   @media (min-width: 36rem) {
     .container::before {
-      width: 70vmax;
+      width: 60vmax;
       height: 90vmax; } }
   @media (min-width: 48rem) {
     .container::before {
-      width: 80vmax; } }
+      width: 70vmax; } }
   @media (min-width: 76.8rem) {
     .container::before {
       width: 90vmax; } }
