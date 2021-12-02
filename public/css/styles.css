@@ -81,7 +81,7 @@ body::-webkit-scrollbar-thumb:hover {
   z-index: -1; }
   @media (min-width: 36rem) {
     .container::before {
-      width: 60vmax;
+      width: 58vmax;
       height: 90vmax; } }
   @media (min-width: 48rem) {
     .container::before {
