@@ -74,7 +74,7 @@ body::-webkit-scrollbar-thumb:hover {
 
   @media (min-width: 76.8rem) {
     h1 {
-      font-size: 15.5rem;
+      font-size: 12rem;
     }
   }
 
@@ -102,7 +102,7 @@ body::-webkit-scrollbar-thumb:hover {
   left: -20vmin;
   top: -20vmin;
   z-index: -1;
-
+  
   @media (min-width: 36rem) {
     width: 58vmax;
     height: 90vmax;
@@ -115,7 +115,7 @@ body::-webkit-scrollbar-thumb:hover {
   @media (min-width: 76.8rem) {
     width: 90vmax;
   }
-
+  
 }
 
 @keyframes wave {
@@ -123,11 +123,11 @@ body::-webkit-scrollbar-thumb:hover {
   20% {
     border-radius: 31% 69% 73% 27% / 54% 59% 41% 46%   ;
   }
-
+  
   40% {
     border-radius: 32% 68% 59% 41% / 54% 47% 53% 46%   ;
   }
-
+  
   60% {
     border-radius: 54% 46% 70% 30% / 54% 31% 69% 46%   ;
   }
@@ -216,4 +216,18 @@ body::-webkit-scrollbar-thumb:hover {
   position: fixed;
   right: $main-size;
   writing-mode: vertical-lr;
+}
+
+.zoom {
+  transition: width 1s, height 1s, transform 1s;
+ -moz-transition: width 1s, height 1s, transform 1s;
+ -webkit-transition: width 1s, height 1s, transform 1s;
+ -o-transition: width 1s, height 1s, transform 1s;
+
+ &:hover {
+  transform : scale(1.02);
+  -moz-transform : scale(1.02);
+  -webkit-transform : scale(1.02);
+  -o-transform : scale(1.02);
+ }
 }
