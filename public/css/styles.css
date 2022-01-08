@@ -43,7 +43,7 @@ body::-webkit-scrollbar-thumb:hover {
       width: 1200px; } }
 
 .main__title {
-  color: #045a54;
+  color: #0A857D;
   margin-bottom: 7.2rem;
   text-align: left; }
   .main__title h1 {
@@ -137,11 +137,11 @@ body::-webkit-scrollbar-thumb:hover {
     transform: rotate(180deg); } }
 
 .js__green {
-  color: #045a54;
+  color: #0A857D;
   font-weight: bold; }
 
 .subtitle h2 {
-  color: #045a54;
+  color: #0A857D;
   margin-bottom: 1.6rem; }
 
 @media (min-width: 1080px) {
@@ -205,7 +205,7 @@ p {
   margin: 0; }
 
 a {
-  color: #045a54;
+  color: #0A857D;
   font-family: "poppins";
   font-weight: bold;
   text-decoration: none;
@@ -325,11 +325,11 @@ nav {
   position: absolute; }
 
 .menu__close-button:hover .leftright {
-  background-color: #045a54;
+  background-color: #0A857D;
   transform: rotate(-45deg); }
 
 .menu__close-button:hover .rightleft {
-  background-color: #045a54;
+  background-color: #0A857D;
   transform: rotate(45deg); }
 
 .menu__close-button:hover .menu__close {
@@ -669,7 +669,7 @@ input, textarea {
   text-align: center;
   margin-bottom: 7.2rem; }
   .form__qr h2 {
-    color: #045a54;
+    color: #0A857D;
     font-size: 1.8rem;
     font-weight: normal;
     padding: 0; }
@@ -771,6 +771,33 @@ input, textarea {
 .header__nav--about {
   border-bottom: 3px solid #262627; }
 
+.banner {
+  position: relative;
+  margin-bottom: 7.2rem; }
+  .banner h2 {
+    font-size: 2rem;
+    color: #0A857D;
+    position: absolute;
+    top: 2.4rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-text-stroke: 0.02rem black; }
+    @media (min-width: 48rem) {
+      .banner h2 {
+        font-size: 52px;
+        top: 5rem; } }
+    @media (min-width: 76.8rem) {
+      .banner h2 {
+        font-size: 56px; } }
+    @media (min-width: 1080px) {
+      .banner h2 {
+        font-size: 72px;
+        top: 8rem; } }
+  .banner img {
+    width: 100%;
+    border: 2px solid black; }
+
 .projects {
   margin-bottom: 7.2rem;
   margin-top: 7.2rem; }
@@ -835,9 +862,13 @@ input, textarea {
   flex-direction: column;
   margin-bottom: 2rem; }
   .project__content h2 {
-    margin-bottom: 1.6rem; }
+    margin-bottom: 1.6rem;
+    border-left: 1.4rem solid #FF877B;
+    padding: 1rem;
+    padding-left: 0.2rem; }
   .project__content p {
-    line-height: 2.8rem; }
+    line-height: 2.8rem;
+    padding-bottom: 1.8rem; }
   .project__content a {
     font-size: 1.6rem;
     color: #521442;
@@ -863,12 +894,13 @@ input, textarea {
   width: 100%; }
 
 .practices__container {
-  background: #045a54;
+  background: #0A857D;
   border: 2px solid #262627;
   padding: 0.8rem; }
   .practices__container h4 {
     margin-bottom: 0.8rem; }
   .practices__container p {
+    line-height: 2.8rem;
     margin-bottom: 0.8rem; }
   @media (min-width: 1080px) {
     .practices__container {

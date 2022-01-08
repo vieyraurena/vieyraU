@@ -96,10 +96,14 @@
 
   h2 {
     margin-bottom: $main-size;
+    border-left: $small-size solid $fourth-color;
+    padding: $size;
+    padding-left: 0.2rem;
   }
 
   p {
     line-height: $line-height-medium + 1;
+    padding-bottom: $medium-size;
   }
   
   a {
@@ -142,6 +146,7 @@
   }
 
   p {
+    line-height: $line-height-medium + 1;
     margin-bottom: 0.8rem;
   }
 

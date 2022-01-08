@@ -126,3 +126,40 @@
 .header__nav--about {
   border-bottom: 3px solid $main-color;
 }
+
+.banner  {
+  position: relative;
+  margin-bottom: 7.2rem;
+
+  h2 {
+    font-size: $large-size;
+    color: $third-color;
+    position: absolute;
+    top: $maxim-size;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-text-stroke: 0.02rem black;
+    
+    
+    @media (min-width: 48rem) {
+      font-size: 52px;
+      top: 5rem;
+    }
+    
+    @media (min-width: 76.8rem) {
+      font-size: 56px;
+    }
+    
+    @media (min-width: 1080px) {
+      font-size: 72px;
+      top: 8rem;
+      
+    }
+  }
+
+  img {
+    width: 100%;
+    border: 2px solid black;
+  }
+}
